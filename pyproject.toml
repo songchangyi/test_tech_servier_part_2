@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "test_tech_servier_part_2"
+version = "0.1.0"
+description = ""
+authors = ["changyi <song.c@sfeir.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-core = "^1.9.3"
+dbt-sqlite = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

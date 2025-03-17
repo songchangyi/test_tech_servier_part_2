@@ -1,0 +1,10 @@
+name: 'dbt_servier'
+version: '1.0.0'
+config-version: 2
+profile: 'dbt_servier'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  dbt_servier:

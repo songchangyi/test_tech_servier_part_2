@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: main
+    tables:
+      - name: transactions
+        description: "Table containing transaction records for each order."
+        columns:
+          - name: date
+            description: "Transaction date."
+            tests:
+              - not_null
+          - name: order_id
+            description: "Order identifier."
+            tests:
+              - not_null
+          - name: client_id
+            description: "Client identifier."
+            tests:
+              - not_null
+          - name: prod_id
+            description: "Product identifier."
+            tests:
+              - not_null
+          - name: prod_price
+            description: "Product price."
+          - name: prod_qty
+            description: "Product quantity."
+
+      - name: product_nomenclature
+        description: "Table providing detailed descriptions for each product."
+        columns:
+          - name: product_id
+            description: "Unique identifier for the product."
+            tests:
+              - not_null
+              - unique
+          - name: product_type
+            description: "Product category."
+          - name: product_name
+            description: "Product name."

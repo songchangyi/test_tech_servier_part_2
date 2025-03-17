@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "main"."product_nomenclature";
+    -- dbt seed --
+    
+            insert into main.product_nomenclature ("product_id", "product_type", "product_name") values
+            (?,?,?),(?,?,?),(?,?,?),(?,?,?)
+        
+
+;
+  

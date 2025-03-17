@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: product_ventes
+    description: "A view that calculates product sales (prod_price * prod_qty) for transactions in 2020."
+    columns:
+      - name: date
+        description: "Client identifier."
+        tests:
+          - not_null
+      - name: prod_ventes
+        description: "Calculated product sales, computed as prod_price * prod_qty."
+
+  - name: client_product_ventes
+    description: "A view that joins product_ventes with product_nomenclature to include product type information."
+    columns:
+      - name: client_id
+        description: "Client identifier."
+        tests:
+          - not_null
+      - name: prod_ventes
+        description: "Product sales from product_ventes."
+      - name: product_type
+        description: "Product category from the product_nomenclature table."
