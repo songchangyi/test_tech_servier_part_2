@@ -1,7 +1,9 @@
 
     
     
-    truncate table "main"."product_nomenclature";
+    
+    create table main."product_nomenclature" ("product_id" INT,"product_type" TEXT,"product_name" TEXT)
+  ;
     -- dbt seed --
     
             insert into main.product_nomenclature ("product_id", "product_type", "product_name") values

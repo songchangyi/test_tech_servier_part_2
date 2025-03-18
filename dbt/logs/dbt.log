@@ -4070,3 +4070,1274 @@ having count(*) > 1
 [0m23:48:06.548455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bcd8b43a9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bcd8b37fbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bcd89e99090>]}
 [0m23:48:06.549561 [debug] [MainThread]: Flushing usage events
 [0m23:48:06.999121 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:28:56.492775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b22276980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b21ac5db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b23105810>]}
+
+
+============================== 11:28:56.497440 | 7fc6100a-620e-4b03-ba32-456daa097442 ==============================
+[0m11:28:56.497440 [info ] [MainThread]: Running with dbt=1.9.3
+[0m11:28:56.498591 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/csong/Desktop/test_tech_servier_part_2/dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/csong/Desktop/test_tech_servier_part_2/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt build', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:28:56.679197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b2315af20>]}
+[0m11:28:56.742954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b221c1bd0>]}
+[0m11:28:56.747781 [info ] [MainThread]: Registered adapter: sqlite=1.9.0
+[0m11:28:56.939992 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m11:28:57.214808 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m11:28:57.215781 [debug] [MainThread]: Partial parsing: updated file: dbt_servier://models/marts/client_product_ventes.sql
+[0m11:28:57.216352 [debug] [MainThread]: Partial parsing: updated file: dbt_servier://models/marts/product_ventes.sql
+[0m11:28:57.809697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b207e4f40>]}
+[0m11:28:57.936036 [debug] [MainThread]: Wrote artifact WritableManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/manifest.json
+[0m11:28:57.939245 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/semantic_manifest.json
+[0m11:28:57.999831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b207df010>]}
+[0m11:28:58.000574 [info ] [MainThread]: Found 2 seeds, 4 models, 8 data tests, 2 sources, 413 macros
+[0m11:28:58.003724 [info ] [MainThread]: 
+[0m11:28:58.004370 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:28:58.004996 [info ] [MainThread]: 
+[0m11:28:58.005908 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m11:28:58.013697 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_mydbt.db'
+[0m11:28:58.143640 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db"
+[0m11:28:58.144339 [debug] [ThreadPool]: On list_mydbt.db: BEGIN
+[0m11:28:58.144959 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:28:58.146288 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:28:58.146831 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db"
+[0m11:28:58.147361 [debug] [ThreadPool]: On list_mydbt.db: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "connection_name": "list_mydbt.db"} */
+
+        pragma database_list
+    
+[0m11:28:58.148001 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:28:58.149683 [debug] [ThreadPool]: On list_mydbt.db: ROLLBACK
+[0m11:28:58.150132 [debug] [ThreadPool]: On list_mydbt.db: Close
+[0m11:28:58.152170 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_mydbt.db_main'
+[0m11:28:58.162935 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db_main"
+[0m11:28:58.163465 [debug] [ThreadPool]: On list_mydbt.db_main: BEGIN
+[0m11:28:58.163990 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:28:58.165107 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:28:58.165623 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db_main"
+[0m11:28:58.166043 [debug] [ThreadPool]: On list_mydbt.db_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "connection_name": "list_mydbt.db_main"} */
+
+        pragma database_list
+    
+[0m11:28:58.166517 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:28:58.168056 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db_main"
+[0m11:28:58.168604 [debug] [ThreadPool]: On list_mydbt.db_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "connection_name": "list_mydbt.db_main"} */
+
+            SELECT
+                'mydbt.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m11:28:58.169089 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:28:58.170489 [debug] [ThreadPool]: On list_mydbt.db_main: ROLLBACK
+[0m11:28:58.170929 [debug] [ThreadPool]: On list_mydbt.db_main: Close
+[0m11:28:58.173063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b20b39090>]}
+[0m11:28:58.173847 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:28:58.174285 [debug] [MainThread]: On master: BEGIN
+[0m11:28:58.174887 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:28:58.175939 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:28:58.176378 [debug] [MainThread]: On master: COMMIT
+[0m11:28:58.177011 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:28:58.177522 [debug] [MainThread]: On master: COMMIT
+[0m11:28:58.178262 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:28:58.178863 [debug] [MainThread]: On master: Close
+[0m11:28:58.183198 [debug] [Thread-1 (]: Began running node seed.dbt_servier.product_nomenclature
+[0m11:28:58.183943 [info ] [Thread-1 (]: 1 of 14 START seed file main.product_nomenclature .............................. [RUN]
+[0m11:28:58.184618 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mydbt.db_main, now seed.dbt_servier.product_nomenclature)
+[0m11:28:58.185111 [debug] [Thread-1 (]: Began compiling node seed.dbt_servier.product_nomenclature
+[0m11:28:58.185764 [debug] [Thread-1 (]: Began executing node seed.dbt_servier.product_nomenclature
+[0m11:28:58.228369 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:28:58.229081 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: BEGIN
+[0m11:28:58.229536 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.230601 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.231099 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:28:58.231827 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "seed.dbt_servier.product_nomenclature"} */
+delete from "main"."product_nomenclature"
+[0m11:28:58.232877 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.255173 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:28:58.255909 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: 
+            insert into main.product_nomenclature ("product_id", "product_type", "product_name") values
+            (?,?,?),(?,?,?),(?,?,?),(?,?,?)
+        ...
+[0m11:28:58.256570 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.262689 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_servier.product_nomenclature"
+[0m11:28:58.286630 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: COMMIT
+[0m11:28:58.287427 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:28:58.288268 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: COMMIT
+[0m11:28:58.291083 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:28:58.293532 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: Close
+[0m11:28:58.296489 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b225d5f00>]}
+[0m11:28:58.297246 [info ] [Thread-1 (]: 1 of 14 OK loaded seed file main.product_nomenclature .......................... [[32mINSERT 4[0m in 0.11s]
+[0m11:28:58.298189 [debug] [Thread-1 (]: Finished running node seed.dbt_servier.product_nomenclature
+[0m11:28:58.298869 [debug] [Thread-1 (]: Began running node seed.dbt_servier.transactions
+[0m11:28:58.299612 [info ] [Thread-1 (]: 2 of 14 START seed file main.transactions ...................................... [RUN]
+[0m11:28:58.300332 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_servier.product_nomenclature, now seed.dbt_servier.transactions)
+[0m11:28:58.300936 [debug] [Thread-1 (]: Began compiling node seed.dbt_servier.transactions
+[0m11:28:58.301551 [debug] [Thread-1 (]: Began executing node seed.dbt_servier.transactions
+[0m11:28:58.311327 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:28:58.312112 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: BEGIN
+[0m11:28:58.312673 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.313574 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.314220 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:28:58.314915 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "seed.dbt_servier.transactions"} */
+delete from "main"."transactions"
+[0m11:28:58.315950 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.328821 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:28:58.329560 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: 
+            insert into main.transactions ("date", "order_id", "client_id", "prod_id", "prod_price", "prod_qty") values
+            (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?)
+        ...
+[0m11:28:58.330188 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.331249 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_servier.transactions"
+[0m11:28:58.334579 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: COMMIT
+[0m11:28:58.335374 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:28:58.336008 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: COMMIT
+[0m11:28:58.339040 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:28:58.340161 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: Close
+[0m11:28:58.341139 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b225d5f00>]}
+[0m11:28:58.342006 [info ] [Thread-1 (]: 2 of 14 OK loaded seed file main.transactions .................................. [[32mINSERT 5[0m in 0.04s]
+[0m11:28:58.343208 [debug] [Thread-1 (]: Finished running node seed.dbt_servier.transactions
+[0m11:28:58.344093 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:28:58.345139 [info ] [Thread-1 (]: 3 of 14 START test source_not_null_main_product_nomenclature_product_id ........ [RUN]
+[0m11:28:58.345917 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_servier.transactions, now test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab)
+[0m11:28:58.346442 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:28:58.367600 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:28:58.368796 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:28:58.383888 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:28:58.385088 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:28:58.385589 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: BEGIN
+[0m11:28:58.386168 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.387163 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.387640 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:28:58.388259 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from main."product_nomenclature"
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.388917 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.392424 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: ROLLBACK
+[0m11:28:58.393237 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: Close
+[0m11:28:58.394166 [info ] [Thread-1 (]: 3 of 14 PASS source_not_null_main_product_nomenclature_product_id .............. [[32mPASS[0m in 0.05s]
+[0m11:28:58.395169 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:28:58.395977 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:28:58.396457 [info ] [Thread-1 (]: 4 of 14 START test source_not_null_main_transactions_client_id ................. [RUN]
+[0m11:28:58.397762 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab, now test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307)
+[0m11:28:58.398554 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:28:58.405406 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:28:58.406843 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:28:58.409578 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:28:58.411017 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:28:58.411661 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: BEGIN
+[0m11:28:58.412260 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.413280 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.413903 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:28:58.414521 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select client_id
+from main."transactions"
+where client_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.415114 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.416853 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: ROLLBACK
+[0m11:28:58.417471 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: Close
+[0m11:28:58.418500 [info ] [Thread-1 (]: 4 of 14 PASS source_not_null_main_transactions_client_id ....................... [[32mPASS[0m in 0.02s]
+[0m11:28:58.419685 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:28:58.420310 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:28:58.421099 [info ] [Thread-1 (]: 5 of 14 START test source_not_null_main_transactions_date ...................... [RUN]
+[0m11:28:58.422052 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307, now test.dbt_servier.source_not_null_main_transactions_date.5365394b93)
+[0m11:28:58.422681 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:28:58.433421 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:28:58.435119 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:28:58.438069 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:28:58.439267 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:28:58.439853 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: BEGIN
+[0m11:28:58.440272 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.441242 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.441835 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:28:58.442319 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select date
+from main."transactions"
+where date is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.443296 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.445173 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: ROLLBACK
+[0m11:28:58.445731 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: Close
+[0m11:28:58.446796 [info ] [Thread-1 (]: 5 of 14 PASS source_not_null_main_transactions_date ............................ [[32mPASS[0m in 0.02s]
+[0m11:28:58.447841 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:28:58.448376 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:28:58.449264 [info ] [Thread-1 (]: 6 of 14 START test source_not_null_main_transactions_order_id .................. [RUN]
+[0m11:28:58.450246 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_date.5365394b93, now test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a)
+[0m11:28:58.450896 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:28:58.459371 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:28:58.461015 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:28:58.464937 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:28:58.466415 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:28:58.467137 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: BEGIN
+[0m11:28:58.467643 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.468789 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.469366 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:28:58.470058 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from main."transactions"
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.470769 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.475276 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: ROLLBACK
+[0m11:28:58.476060 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: Close
+[0m11:28:58.479382 [info ] [Thread-1 (]: 6 of 14 PASS source_not_null_main_transactions_order_id ........................ [[32mPASS[0m in 0.03s]
+[0m11:28:58.481381 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:28:58.482273 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:28:58.482950 [info ] [Thread-1 (]: 7 of 14 START test source_not_null_main_transactions_prod_id ................... [RUN]
+[0m11:28:58.484029 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a, now test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031)
+[0m11:28:58.484739 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:28:58.490449 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:28:58.491960 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:28:58.496805 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:28:58.498336 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:28:58.499084 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: BEGIN
+[0m11:28:58.499940 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.503738 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m11:28:58.504353 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:28:58.505007 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select prod_id
+from main."transactions"
+where prod_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.505683 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.507237 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: ROLLBACK
+[0m11:28:58.507857 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: Close
+[0m11:28:58.508552 [info ] [Thread-1 (]: 7 of 14 PASS source_not_null_main_transactions_prod_id ......................... [[32mPASS[0m in 0.02s]
+[0m11:28:58.509771 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:28:58.510711 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:28:58.511646 [info ] [Thread-1 (]: 8 of 14 START test source_unique_main_product_nomenclature_product_id .......... [RUN]
+[0m11:28:58.512625 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031, now test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717)
+[0m11:28:58.513249 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:28:58.522151 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:28:58.523922 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:28:58.527434 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:28:58.529132 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:28:58.532106 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: BEGIN
+[0m11:28:58.533870 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.535750 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:28:58.537623 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:28:58.538675 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from main."product_nomenclature"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.539608 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.541851 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: ROLLBACK
+[0m11:28:58.542541 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: Close
+[0m11:28:58.543693 [info ] [Thread-1 (]: 8 of 14 PASS source_unique_main_product_nomenclature_product_id ................ [[32mPASS[0m in 0.03s]
+[0m11:28:58.547333 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:28:58.548015 [debug] [Thread-1 (]: Began running node model.dbt_servier.client_product_ventes
+[0m11:28:58.548981 [info ] [Thread-1 (]: 9 of 14 START sql view model main.client_product_ventes ........................ [RUN]
+[0m11:28:58.550238 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717, now model.dbt_servier.client_product_ventes)
+[0m11:28:58.550972 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.client_product_ventes
+[0m11:28:58.557495 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.client_product_ventes"
+[0m11:28:58.559136 [debug] [Thread-1 (]: Began executing node model.dbt_servier.client_product_ventes
+[0m11:28:58.572947 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.client_product_ventes"
+[0m11:28:58.573707 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.client_product_ventes"} */
+drop view if exists "main"."client_product_ventes"
+[0m11:28:58.574222 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.578227 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m11:28:58.584040 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.client_product_ventes"
+[0m11:28:58.585661 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.client_product_ventes"
+[0m11:28:58.586269 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: BEGIN
+[0m11:28:58.588998 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.591565 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.client_product_ventes"
+[0m11:28:58.592181 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.client_product_ventes"} */
+
+    
+    create view main."client_product_ventes" as
+    
+
+WITH product_ventes AS (
+    SELECT 
+        client_id, 
+        prod_id, 
+        prod_price * prod_qty AS prod_ventes 
+    FROM main."transactions" 
+    WHERE date BETWEEN "2020-01-01" AND "2020-12-31"
+), client_product_ventes AS (
+    SELECT 
+        pv.client_id, 
+        pv.prod_ventes, 
+        pn.product_type 
+    FROM product_ventes pv
+    LEFT JOIN main."product_nomenclature" pn
+        ON pv.prod_id = pn.product_id
+)
+
+SELECT
+    client_id,
+    SUM(CASE WHEN product_type = 'MEUBLE' THEN prod_ventes END) AS ventes_meuble,
+    SUM(CASE WHEN product_type = 'DECO' THEN prod_ventes END) AS ventes_deco
+FROM 
+    client_product_ventes
+GROUP BY 
+    client_id;
+[0m11:28:58.593348 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.595295 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: COMMIT
+[0m11:28:58.596197 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.client_product_ventes"
+[0m11:28:58.597129 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: COMMIT
+[0m11:28:58.599796 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:28:58.601053 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: Close
+[0m11:28:58.602030 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b21ac64d0>]}
+[0m11:28:58.602968 [info ] [Thread-1 (]: 9 of 14 OK created sql view model main.client_product_ventes ................... [[32mOK[0m in 0.05s]
+[0m11:28:58.604390 [debug] [Thread-1 (]: Finished running node model.dbt_servier.client_product_ventes
+[0m11:28:58.605144 [debug] [Thread-1 (]: Began running node model.dbt_servier.product_ventes
+[0m11:28:58.606276 [info ] [Thread-1 (]: 10 of 14 START sql view model main.product_ventes .............................. [RUN]
+[0m11:28:58.609817 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.client_product_ventes, now model.dbt_servier.product_ventes)
+[0m11:28:58.610456 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.product_ventes
+[0m11:28:58.614835 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.product_ventes"
+[0m11:28:58.616584 [debug] [Thread-1 (]: Began executing node model.dbt_servier.product_ventes
+[0m11:28:58.622914 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.product_ventes"
+[0m11:28:58.623592 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.product_ventes"} */
+drop view if exists "main"."product_ventes"
+[0m11:28:58.624141 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.627752 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m11:28:58.629441 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.product_ventes"
+[0m11:28:58.630858 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.product_ventes"
+[0m11:28:58.631857 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: BEGIN
+[0m11:28:58.632387 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.632997 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.product_ventes"
+[0m11:28:58.633487 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.product_ventes"} */
+
+    
+    create view main."product_ventes" as
+    
+
+SELECT
+    date,
+    SUM(prod_price * prod_qty) AS ventes
+FROM main."transactions"
+WHERE date BETWEEN "2020-01-01" AND "2020-12-31"
+GROUP BY date
+ORDER BY date;
+[0m11:28:58.634540 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.636229 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: COMMIT
+[0m11:28:58.636971 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.product_ventes"
+[0m11:28:58.637622 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: COMMIT
+[0m11:28:58.641807 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m11:28:58.642993 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: Close
+[0m11:28:58.644213 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b21a87700>]}
+[0m11:28:58.645159 [info ] [Thread-1 (]: 10 of 14 OK created sql view model main.product_ventes ......................... [[32mOK[0m in 0.03s]
+[0m11:28:58.646375 [debug] [Thread-1 (]: Finished running node model.dbt_servier.product_ventes
+[0m11:28:58.647039 [debug] [Thread-1 (]: Began running node model.dbt_servier.stg_transactions
+[0m11:28:58.647771 [info ] [Thread-1 (]: 11 of 14 START sql table model main.stg_transactions ........................... [RUN]
+[0m11:28:58.648725 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.product_ventes, now model.dbt_servier.stg_transactions)
+[0m11:28:58.649599 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.stg_transactions
+[0m11:28:58.655046 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.stg_transactions"
+[0m11:28:58.656592 [debug] [Thread-1 (]: Began executing node model.dbt_servier.stg_transactions
+[0m11:28:58.668421 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_transactions"
+[0m11:28:58.671462 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.stg_transactions"} */
+drop table if exists "main"."stg_transactions"
+[0m11:28:58.672310 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.676138 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m11:28:58.683017 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.stg_transactions"
+[0m11:28:58.684297 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_transactions"
+[0m11:28:58.684846 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: BEGIN
+[0m11:28:58.685522 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.686012 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_transactions"
+[0m11:28:58.686609 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.stg_transactions"} */
+
+  
+    
+    
+    create  table main."stg_transactions"
+    as
+        
+
+SELECT
+    *
+FROM main."transactions"
+
+  
+[0m11:28:58.687542 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.688980 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: COMMIT
+[0m11:28:58.689589 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_transactions"
+[0m11:28:58.690077 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: COMMIT
+[0m11:28:58.692870 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:28:58.694246 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: Close
+[0m11:28:58.695186 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b21532920>]}
+[0m11:28:58.696038 [info ] [Thread-1 (]: 11 of 14 OK created sql table model main.stg_transactions ...................... [[32mOK[0m in 0.05s]
+[0m11:28:58.697097 [debug] [Thread-1 (]: Finished running node model.dbt_servier.stg_transactions
+[0m11:28:58.697775 [debug] [Thread-1 (]: Began running node model.dbt_servier.stg_product_nomenclature
+[0m11:28:58.698696 [info ] [Thread-1 (]: 12 of 14 START sql table model main.stg_product_nomenclature ................... [RUN]
+[0m11:28:58.701337 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.stg_transactions, now model.dbt_servier.stg_product_nomenclature)
+[0m11:28:58.702806 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.stg_product_nomenclature
+[0m11:28:58.710083 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.stg_product_nomenclature"
+[0m11:28:58.711636 [debug] [Thread-1 (]: Began executing node model.dbt_servier.stg_product_nomenclature
+[0m11:28:58.717104 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_product_nomenclature"
+[0m11:28:58.717820 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.stg_product_nomenclature"} */
+drop table if exists "main"."stg_product_nomenclature"
+[0m11:28:58.718309 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.721930 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m11:28:58.723979 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.stg_product_nomenclature"
+[0m11:28:58.725324 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_product_nomenclature"
+[0m11:28:58.725985 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: BEGIN
+[0m11:28:58.726533 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.727135 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_product_nomenclature"
+[0m11:28:58.727722 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.stg_product_nomenclature"} */
+
+  
+    
+    
+    create  table main."stg_product_nomenclature"
+    as
+        
+
+SELECT
+    *
+FROM main."product_nomenclature"
+
+  
+[0m11:28:58.728669 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.730853 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: COMMIT
+[0m11:28:58.731935 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_product_nomenclature"
+[0m11:28:58.732416 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: COMMIT
+[0m11:28:58.734853 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:28:58.737496 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: Close
+[0m11:28:58.738670 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fc6100a-620e-4b03-ba32-456daa097442', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b1ab19d80>]}
+[0m11:28:58.739583 [info ] [Thread-1 (]: 12 of 14 OK created sql table model main.stg_product_nomenclature .............. [[32mOK[0m in 0.04s]
+[0m11:28:58.740717 [debug] [Thread-1 (]: Finished running node model.dbt_servier.stg_product_nomenclature
+[0m11:28:58.741348 [debug] [Thread-1 (]: Began running node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:28:58.742033 [info ] [Thread-1 (]: 13 of 14 START test not_null_client_product_ventes_client_id ................... [RUN]
+[0m11:28:58.743030 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.stg_product_nomenclature, now test.dbt_servier.not_null_client_product_ventes_client_id.633f605896)
+[0m11:28:58.743707 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:28:58.752353 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:28:58.754038 [debug] [Thread-1 (]: Began executing node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:28:58.757104 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:28:58.758409 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:28:58.759019 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: BEGIN
+[0m11:28:58.759438 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.760374 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.761055 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:28:58.761551 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select client_id
+from main."client_product_ventes"
+where client_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.762275 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.763921 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: ROLLBACK
+[0m11:28:58.764536 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: Close
+[0m11:28:58.765297 [info ] [Thread-1 (]: 13 of 14 PASS not_null_client_product_ventes_client_id ......................... [[32mPASS[0m in 0.02s]
+[0m11:28:58.766365 [debug] [Thread-1 (]: Finished running node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:28:58.767039 [debug] [Thread-1 (]: Began running node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:28:58.767683 [info ] [Thread-1 (]: 14 of 14 START test not_null_product_ventes_date ............................... [RUN]
+[0m11:28:58.768447 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.not_null_client_product_ventes_client_id.633f605896, now test.dbt_servier.not_null_product_ventes_date.e36dd44ea0)
+[0m11:28:58.769174 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:28:58.779513 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:28:58.781186 [debug] [Thread-1 (]: Began executing node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:28:58.784549 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:28:58.786196 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:28:58.786908 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: BEGIN
+[0m11:28:58.787447 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:28:58.788572 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:28:58.789169 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:28:58.789785 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select date
+from main."product_ventes"
+where date is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:28:58.790321 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:28:58.792189 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: ROLLBACK
+[0m11:28:58.792957 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: Close
+[0m11:28:58.793894 [info ] [Thread-1 (]: 14 of 14 PASS not_null_product_ventes_date ..................................... [[32mPASS[0m in 0.03s]
+[0m11:28:58.795881 [debug] [Thread-1 (]: Finished running node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:28:58.798230 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:28:58.798865 [debug] [MainThread]: On master: BEGIN
+[0m11:28:58.799342 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:28:58.801556 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m11:28:58.802132 [debug] [MainThread]: On master: COMMIT
+[0m11:28:58.802542 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:28:58.803340 [debug] [MainThread]: On master: COMMIT
+[0m11:28:58.803915 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:28:58.804523 [debug] [MainThread]: On master: Close
+[0m11:28:58.805227 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:28:58.805750 [debug] [MainThread]: Connection 'list_mydbt.db' was properly closed.
+[0m11:28:58.806193 [debug] [MainThread]: Connection 'test.dbt_servier.not_null_product_ventes_date.e36dd44ea0' was properly closed.
+[0m11:28:58.806874 [info ] [MainThread]: 
+[0m11:28:58.807807 [info ] [MainThread]: Finished running 2 seeds, 2 table models, 8 data tests, 2 view models in 0 hours 0 minutes and 0.80 seconds (0.80s).
+[0m11:28:58.814412 [debug] [MainThread]: Command end result
+[0m11:28:58.870925 [debug] [MainThread]: Wrote artifact WritableManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/manifest.json
+[0m11:28:58.877004 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/semantic_manifest.json
+[0m11:28:58.896914 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/run_results.json
+[0m11:28:58.897574 [info ] [MainThread]: 
+[0m11:28:58.900964 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:28:58.903293 [info ] [MainThread]: 
+[0m11:28:58.903933 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 TOTAL=14
+[0m11:28:58.911816 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 2.4788961, "process_in_blocks": "40824", "process_kernel_time": 0.449132, "process_mem_max_rss": "112440", "process_out_blocks": "3336", "process_user_time": 3.517306}
+[0m11:28:58.912535 [debug] [MainThread]: Command `dbt build` succeeded at 11:28:58.912414 after 2.48 seconds
+[0m11:28:58.913166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b22276980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b24ba2bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0b221c1bd0>]}
+[0m11:28:58.917135 [debug] [MainThread]: Flushing usage events
+[0m11:28:59.407645 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:31:04.837347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7a6769b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7b506ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7b507e20>]}
+
+
+============================== 11:31:04.842639 | 1a899ca8-9855-48dd-be3d-1df5fdc1d28e ==============================
+[0m11:31:04.842639 [info ] [MainThread]: Running with dbt=1.9.3
+[0m11:31:04.844947 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/csong/Desktop/test_tech_servier_part_2/dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/csong/Desktop/test_tech_servier_part_2/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt build', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:31:05.017882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7b505c30>]}
+[0m11:31:05.096437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7a5c0f40>]}
+[0m11:31:05.097668 [info ] [MainThread]: Registered adapter: sqlite=1.9.0
+[0m11:31:05.232240 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m11:31:05.410937 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:31:05.411581 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:31:05.484768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea79196980>]}
+[0m11:31:05.608340 [debug] [MainThread]: Wrote artifact WritableManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/manifest.json
+[0m11:31:05.611108 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/semantic_manifest.json
+[0m11:31:05.637667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea791958a0>]}
+[0m11:31:05.638329 [info ] [MainThread]: Found 2 seeds, 4 models, 8 data tests, 2 sources, 413 macros
+[0m11:31:05.641131 [info ] [MainThread]: 
+[0m11:31:05.641747 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:31:05.642221 [info ] [MainThread]: 
+[0m11:31:05.642981 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m11:31:05.651793 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_mydbt.db'
+[0m11:31:05.731243 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db"
+[0m11:31:05.732096 [debug] [ThreadPool]: On list_mydbt.db: BEGIN
+[0m11:31:05.732624 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:05.733619 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:31:05.734210 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db"
+[0m11:31:05.734665 [debug] [ThreadPool]: On list_mydbt.db: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "connection_name": "list_mydbt.db"} */
+
+        pragma database_list
+    
+[0m11:31:05.735878 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:31:05.737760 [debug] [ThreadPool]: On list_mydbt.db: ROLLBACK
+[0m11:31:05.738343 [debug] [ThreadPool]: On list_mydbt.db: Close
+[0m11:31:05.741016 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_mydbt.db_main'
+[0m11:31:05.753401 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db_main"
+[0m11:31:05.754290 [debug] [ThreadPool]: On list_mydbt.db_main: BEGIN
+[0m11:31:05.754849 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:31:05.755638 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:31:05.759065 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db_main"
+[0m11:31:05.760052 [debug] [ThreadPool]: On list_mydbt.db_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "connection_name": "list_mydbt.db_main"} */
+
+        pragma database_list
+    
+[0m11:31:05.760663 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:31:05.762141 [debug] [ThreadPool]: Using sqlite connection "list_mydbt.db_main"
+[0m11:31:05.762681 [debug] [ThreadPool]: On list_mydbt.db_main: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "connection_name": "list_mydbt.db_main"} */
+
+            SELECT
+                'mydbt.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m11:31:05.763147 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:31:05.764238 [debug] [ThreadPool]: On list_mydbt.db_main: ROLLBACK
+[0m11:31:05.764754 [debug] [ThreadPool]: On list_mydbt.db_main: Close
+[0m11:31:05.765681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7b5441f0>]}
+[0m11:31:05.766228 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:31:05.766719 [debug] [MainThread]: On master: BEGIN
+[0m11:31:05.767197 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:31:05.768001 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:31:05.768447 [debug] [MainThread]: On master: COMMIT
+[0m11:31:05.769066 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:31:05.769630 [debug] [MainThread]: On master: COMMIT
+[0m11:31:05.770181 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:31:05.770814 [debug] [MainThread]: On master: Close
+[0m11:31:05.774166 [debug] [Thread-1 (]: Began running node seed.dbt_servier.product_nomenclature
+[0m11:31:05.775192 [info ] [Thread-1 (]: 1 of 14 START seed file main.product_nomenclature .............................. [RUN]
+[0m11:31:05.776514 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mydbt.db_main, now seed.dbt_servier.product_nomenclature)
+[0m11:31:05.777036 [debug] [Thread-1 (]: Began compiling node seed.dbt_servier.product_nomenclature
+[0m11:31:05.777703 [debug] [Thread-1 (]: Began executing node seed.dbt_servier.product_nomenclature
+[0m11:31:05.811050 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:31:05.811701 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: BEGIN
+[0m11:31:05.812330 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:05.813128 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:05.813719 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:31:05.814170 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "seed.dbt_servier.product_nomenclature"} */
+
+    create table main."product_nomenclature" ("product_id" INT,"product_type" TEXT,"product_name" TEXT)
+  
+[0m11:31:05.815778 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:05.838506 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:31:05.839635 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: 
+            insert into main.product_nomenclature ("product_id", "product_type", "product_name") values
+            (?,?,?),(?,?,?),(?,?,?),(?,?,?)
+        ...
+[0m11:31:05.841272 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:05.855480 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_servier.product_nomenclature"
+[0m11:31:05.880330 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: COMMIT
+[0m11:31:05.881019 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.product_nomenclature"
+[0m11:31:05.881704 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: COMMIT
+[0m11:31:05.887782 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m11:31:05.892324 [debug] [Thread-1 (]: On seed.dbt_servier.product_nomenclature: Close
+[0m11:31:05.895135 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea78161210>]}
+[0m11:31:05.895972 [info ] [Thread-1 (]: 1 of 14 OK loaded seed file main.product_nomenclature .......................... [[32mINSERT 4[0m in 0.12s]
+[0m11:31:05.896884 [debug] [Thread-1 (]: Finished running node seed.dbt_servier.product_nomenclature
+[0m11:31:05.897512 [debug] [Thread-1 (]: Began running node seed.dbt_servier.transactions
+[0m11:31:05.898948 [info ] [Thread-1 (]: 2 of 14 START seed file main.transactions ...................................... [RUN]
+[0m11:31:05.900042 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_servier.product_nomenclature, now seed.dbt_servier.transactions)
+[0m11:31:05.900695 [debug] [Thread-1 (]: Began compiling node seed.dbt_servier.transactions
+[0m11:31:05.901337 [debug] [Thread-1 (]: Began executing node seed.dbt_servier.transactions
+[0m11:31:05.912810 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:31:05.913357 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: BEGIN
+[0m11:31:05.913971 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:05.914695 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:05.915197 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:31:05.915736 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "seed.dbt_servier.transactions"} */
+
+    create table main."transactions" ("date" TEXT,"order_id" INT,"client_id" INT,"prod_id" INT,"prod_price" REAL,"prod_qty" INT)
+  
+[0m11:31:05.916459 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:05.930762 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:31:05.933167 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: 
+            insert into main.transactions ("date", "order_id", "client_id", "prod_id", "prod_price", "prod_qty") values
+            (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?)
+        ...
+[0m11:31:05.934488 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:05.935550 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_servier.transactions"
+[0m11:31:05.938260 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: COMMIT
+[0m11:31:05.938910 [debug] [Thread-1 (]: Using sqlite connection "seed.dbt_servier.transactions"
+[0m11:31:05.939574 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: COMMIT
+[0m11:31:05.942776 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:31:05.943946 [debug] [Thread-1 (]: On seed.dbt_servier.transactions: Close
+[0m11:31:05.944851 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7a9d5f30>]}
+[0m11:31:05.945573 [info ] [Thread-1 (]: 2 of 14 OK loaded seed file main.transactions .................................. [[32mINSERT 5[0m in 0.04s]
+[0m11:31:05.946571 [debug] [Thread-1 (]: Finished running node seed.dbt_servier.transactions
+[0m11:31:05.947156 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:31:05.949051 [info ] [Thread-1 (]: 3 of 14 START test source_not_null_main_product_nomenclature_product_id ........ [RUN]
+[0m11:31:05.951390 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_servier.transactions, now test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab)
+[0m11:31:05.952160 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:31:05.979269 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:31:05.980996 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:31:05.999037 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:31:06.001376 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:31:06.002116 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: BEGIN
+[0m11:31:06.002711 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.003644 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.004204 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"
+[0m11:31:06.004820 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select product_id
+from main."product_nomenclature"
+where product_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.005663 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.009291 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: ROLLBACK
+[0m11:31:06.009970 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab: Close
+[0m11:31:06.010869 [info ] [Thread-1 (]: 3 of 14 PASS source_not_null_main_product_nomenclature_product_id .............. [[32mPASS[0m in 0.06s]
+[0m11:31:06.012038 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab
+[0m11:31:06.012705 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:31:06.013294 [info ] [Thread-1 (]: 4 of 14 START test source_not_null_main_transactions_client_id ................. [RUN]
+[0m11:31:06.014113 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_product_nomenclature_product_id.8c6388a2ab, now test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307)
+[0m11:31:06.014818 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:31:06.024021 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:31:06.025580 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:31:06.028307 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:31:06.029759 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:31:06.030295 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: BEGIN
+[0m11:31:06.030909 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.031615 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.032216 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"
+[0m11:31:06.032819 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select client_id
+from main."transactions"
+where client_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.033569 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.037095 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: ROLLBACK
+[0m11:31:06.037719 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307: Close
+[0m11:31:06.038908 [info ] [Thread-1 (]: 4 of 14 PASS source_not_null_main_transactions_client_id ....................... [[32mPASS[0m in 0.02s]
+[0m11:31:06.040001 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307
+[0m11:31:06.040686 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:31:06.041350 [info ] [Thread-1 (]: 5 of 14 START test source_not_null_main_transactions_date ...................... [RUN]
+[0m11:31:06.042097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_client_id.bbd3d76307, now test.dbt_servier.source_not_null_main_transactions_date.5365394b93)
+[0m11:31:06.042660 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:31:06.048502 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:31:06.050030 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:31:06.053412 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:31:06.055017 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:31:06.055954 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: BEGIN
+[0m11:31:06.056605 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.057525 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.058076 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"
+[0m11:31:06.058701 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_date.5365394b93"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select date
+from main."transactions"
+where date is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.061547 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:31:06.063290 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: ROLLBACK
+[0m11:31:06.064345 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_date.5365394b93: Close
+[0m11:31:06.065262 [info ] [Thread-1 (]: 5 of 14 PASS source_not_null_main_transactions_date ............................ [[32mPASS[0m in 0.02s]
+[0m11:31:06.066179 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_date.5365394b93
+[0m11:31:06.066931 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:31:06.067701 [info ] [Thread-1 (]: 6 of 14 START test source_not_null_main_transactions_order_id .................. [RUN]
+[0m11:31:06.069249 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_date.5365394b93, now test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a)
+[0m11:31:06.070530 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:31:06.076417 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:31:06.077988 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:31:06.085194 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:31:06.086730 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:31:06.087271 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: BEGIN
+[0m11:31:06.087844 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.088480 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.089370 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"
+[0m11:31:06.089962 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from main."transactions"
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.090728 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.092358 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: ROLLBACK
+[0m11:31:06.092989 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a: Close
+[0m11:31:06.093763 [info ] [Thread-1 (]: 6 of 14 PASS source_not_null_main_transactions_order_id ........................ [[32mPASS[0m in 0.02s]
+[0m11:31:06.094884 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a
+[0m11:31:06.095467 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:31:06.096164 [info ] [Thread-1 (]: 7 of 14 START test source_not_null_main_transactions_prod_id ................... [RUN]
+[0m11:31:06.098951 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_order_id.9b9e13c69a, now test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031)
+[0m11:31:06.099984 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:31:06.162574 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:31:06.164008 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:31:06.166937 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:31:06.168250 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:31:06.168864 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: BEGIN
+[0m11:31:06.169350 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.170197 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.170796 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"
+[0m11:31:06.171302 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select prod_id
+from main."transactions"
+where prod_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.172218 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.174170 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: ROLLBACK
+[0m11:31:06.174747 [debug] [Thread-1 (]: On test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031: Close
+[0m11:31:06.175678 [info ] [Thread-1 (]: 7 of 14 PASS source_not_null_main_transactions_prod_id ......................... [[32mPASS[0m in 0.08s]
+[0m11:31:06.176745 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031
+[0m11:31:06.177331 [debug] [Thread-1 (]: Began running node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:31:06.178245 [info ] [Thread-1 (]: 8 of 14 START test source_unique_main_product_nomenclature_product_id .......... [RUN]
+[0m11:31:06.179245 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_not_null_main_transactions_prod_id.6bf9d50031, now test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717)
+[0m11:31:06.179903 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:31:06.187729 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:31:06.189452 [debug] [Thread-1 (]: Began executing node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:31:06.192438 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:31:06.193590 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:31:06.194248 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: BEGIN
+[0m11:31:06.194875 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.195739 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.196455 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"
+[0m11:31:06.197043 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from main."product_nomenclature"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.197833 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.200102 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: ROLLBACK
+[0m11:31:06.200954 [debug] [Thread-1 (]: On test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717: Close
+[0m11:31:06.201929 [info ] [Thread-1 (]: 8 of 14 PASS source_unique_main_product_nomenclature_product_id ................ [[32mPASS[0m in 0.02s]
+[0m11:31:06.203135 [debug] [Thread-1 (]: Finished running node test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717
+[0m11:31:06.203826 [debug] [Thread-1 (]: Began running node model.dbt_servier.client_product_ventes
+[0m11:31:06.204791 [info ] [Thread-1 (]: 9 of 14 START sql view model main.client_product_ventes ........................ [RUN]
+[0m11:31:06.206155 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.source_unique_main_product_nomenclature_product_id.7a911d1717, now model.dbt_servier.client_product_ventes)
+[0m11:31:06.206782 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.client_product_ventes
+[0m11:31:06.216627 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.client_product_ventes"
+[0m11:31:06.218048 [debug] [Thread-1 (]: Began executing node model.dbt_servier.client_product_ventes
+[0m11:31:06.231479 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.client_product_ventes"
+[0m11:31:06.233051 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.client_product_ventes"
+[0m11:31:06.233939 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: BEGIN
+[0m11:31:06.236186 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.237671 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:31:06.238223 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.client_product_ventes"
+[0m11:31:06.238955 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.client_product_ventes"} */
+
+    
+    create view main."client_product_ventes" as
+    
+
+WITH product_ventes AS (
+    SELECT 
+        client_id, 
+        prod_id, 
+        prod_price * prod_qty AS prod_ventes 
+    FROM main."transactions" 
+    WHERE date BETWEEN "2020-01-01" AND "2020-12-31"
+), client_product_ventes AS (
+    SELECT 
+        pv.client_id, 
+        pv.prod_ventes, 
+        pn.product_type 
+    FROM product_ventes pv
+    LEFT JOIN main."product_nomenclature" pn
+        ON pv.prod_id = pn.product_id
+)
+
+SELECT
+    client_id,
+    SUM(CASE WHEN product_type = 'MEUBLE' THEN prod_ventes END) AS ventes_meuble,
+    SUM(CASE WHEN product_type = 'DECO' THEN prod_ventes END) AS ventes_deco
+FROM 
+    client_product_ventes
+GROUP BY 
+    client_id;
+[0m11:31:06.240458 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.242221 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: COMMIT
+[0m11:31:06.242907 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.client_product_ventes"
+[0m11:31:06.243588 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: COMMIT
+[0m11:31:06.246351 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:31:06.247658 [debug] [Thread-1 (]: On model.dbt_servier.client_product_ventes: Close
+[0m11:31:06.248686 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea780c10c0>]}
+[0m11:31:06.249668 [info ] [Thread-1 (]: 9 of 14 OK created sql view model main.client_product_ventes ................... [[32mOK[0m in 0.04s]
+[0m11:31:06.250867 [debug] [Thread-1 (]: Finished running node model.dbt_servier.client_product_ventes
+[0m11:31:06.251614 [debug] [Thread-1 (]: Began running node model.dbt_servier.product_ventes
+[0m11:31:06.252277 [info ] [Thread-1 (]: 10 of 14 START sql view model main.product_ventes .............................. [RUN]
+[0m11:31:06.253285 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.client_product_ventes, now model.dbt_servier.product_ventes)
+[0m11:31:06.253924 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.product_ventes
+[0m11:31:06.261811 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.product_ventes"
+[0m11:31:06.262884 [debug] [Thread-1 (]: Began executing node model.dbt_servier.product_ventes
+[0m11:31:06.267811 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.product_ventes"
+[0m11:31:06.269291 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.product_ventes"
+[0m11:31:06.269988 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: BEGIN
+[0m11:31:06.270495 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.271523 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.272549 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.product_ventes"
+[0m11:31:06.273871 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.product_ventes"} */
+
+    
+    create view main."product_ventes" as
+    
+
+SELECT
+    date,
+    SUM(prod_price * prod_qty) AS ventes
+FROM main."transactions"
+WHERE date BETWEEN "2020-01-01" AND "2020-12-31"
+GROUP BY date
+ORDER BY date;
+[0m11:31:06.275093 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.277059 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: COMMIT
+[0m11:31:06.278665 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.product_ventes"
+[0m11:31:06.280568 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: COMMIT
+[0m11:31:06.283466 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:31:06.284957 [debug] [Thread-1 (]: On model.dbt_servier.product_ventes: Close
+[0m11:31:06.285875 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7805eb30>]}
+[0m11:31:06.286794 [info ] [Thread-1 (]: 10 of 14 OK created sql view model main.product_ventes ......................... [[32mOK[0m in 0.03s]
+[0m11:31:06.288135 [debug] [Thread-1 (]: Finished running node model.dbt_servier.product_ventes
+[0m11:31:06.288859 [debug] [Thread-1 (]: Began running node model.dbt_servier.stg_transactions
+[0m11:31:06.290072 [info ] [Thread-1 (]: 11 of 14 START sql table model main.stg_transactions ........................... [RUN]
+[0m11:31:06.291047 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.product_ventes, now model.dbt_servier.stg_transactions)
+[0m11:31:06.291707 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.stg_transactions
+[0m11:31:06.295752 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.stg_transactions"
+[0m11:31:06.296969 [debug] [Thread-1 (]: Began executing node model.dbt_servier.stg_transactions
+[0m11:31:06.313602 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.stg_transactions"
+[0m11:31:06.315024 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_transactions"
+[0m11:31:06.315647 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: BEGIN
+[0m11:31:06.316111 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.316932 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.317521 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_transactions"
+[0m11:31:06.318155 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.stg_transactions"} */
+
+  
+    
+    
+    create  table main."stg_transactions"
+    as
+        
+
+SELECT
+    *
+FROM main."transactions"
+
+  
+[0m11:31:06.320354 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:31:06.322250 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: COMMIT
+[0m11:31:06.323248 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_transactions"
+[0m11:31:06.324039 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: COMMIT
+[0m11:31:06.329548 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m11:31:06.332603 [debug] [Thread-1 (]: On model.dbt_servier.stg_transactions: Close
+[0m11:31:06.334086 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7805ff40>]}
+[0m11:31:06.335591 [info ] [Thread-1 (]: 11 of 14 OK created sql table model main.stg_transactions ...................... [[32mOK[0m in 0.04s]
+[0m11:31:06.337019 [debug] [Thread-1 (]: Finished running node model.dbt_servier.stg_transactions
+[0m11:31:06.337803 [debug] [Thread-1 (]: Began running node model.dbt_servier.stg_product_nomenclature
+[0m11:31:06.338806 [info ] [Thread-1 (]: 12 of 14 START sql table model main.stg_product_nomenclature ................... [RUN]
+[0m11:31:06.340083 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.stg_transactions, now model.dbt_servier.stg_product_nomenclature)
+[0m11:31:06.340677 [debug] [Thread-1 (]: Began compiling node model.dbt_servier.stg_product_nomenclature
+[0m11:31:06.345354 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_servier.stg_product_nomenclature"
+[0m11:31:06.347053 [debug] [Thread-1 (]: Began executing node model.dbt_servier.stg_product_nomenclature
+[0m11:31:06.353366 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_servier.stg_product_nomenclature"
+[0m11:31:06.356668 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_product_nomenclature"
+[0m11:31:06.359986 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: BEGIN
+[0m11:31:06.361638 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.362952 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.363456 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_product_nomenclature"
+[0m11:31:06.364295 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "model.dbt_servier.stg_product_nomenclature"} */
+
+  
+    
+    
+    create  table main."stg_product_nomenclature"
+    as
+        
+
+SELECT
+    *
+FROM main."product_nomenclature"
+
+  
+[0m11:31:06.365389 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.367155 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: COMMIT
+[0m11:31:06.367769 [debug] [Thread-1 (]: Using sqlite connection "model.dbt_servier.stg_product_nomenclature"
+[0m11:31:06.368191 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: COMMIT
+[0m11:31:06.371332 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m11:31:06.372967 [debug] [Thread-1 (]: On model.dbt_servier.stg_product_nomenclature: Close
+[0m11:31:06.373918 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1a899ca8-9855-48dd-be3d-1df5fdc1d28e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea78088a30>]}
+[0m11:31:06.375288 [info ] [Thread-1 (]: 12 of 14 OK created sql table model main.stg_product_nomenclature .............. [[32mOK[0m in 0.03s]
+[0m11:31:06.376957 [debug] [Thread-1 (]: Finished running node model.dbt_servier.stg_product_nomenclature
+[0m11:31:06.377703 [debug] [Thread-1 (]: Began running node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:31:06.378372 [info ] [Thread-1 (]: 13 of 14 START test not_null_client_product_ventes_client_id ................... [RUN]
+[0m11:31:06.379452 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_servier.stg_product_nomenclature, now test.dbt_servier.not_null_client_product_ventes_client_id.633f605896)
+[0m11:31:06.379993 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:31:06.386160 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:31:06.387500 [debug] [Thread-1 (]: Began executing node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:31:06.391136 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:31:06.392964 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:31:06.395266 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: BEGIN
+[0m11:31:06.395851 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.396680 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.397587 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"
+[0m11:31:06.398290 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.not_null_client_product_ventes_client_id.633f605896"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select client_id
+from main."client_product_ventes"
+where client_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.399231 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.400940 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: ROLLBACK
+[0m11:31:06.401561 [debug] [Thread-1 (]: On test.dbt_servier.not_null_client_product_ventes_client_id.633f605896: Close
+[0m11:31:06.402470 [info ] [Thread-1 (]: 13 of 14 PASS not_null_client_product_ventes_client_id ......................... [[32mPASS[0m in 0.02s]
+[0m11:31:06.403618 [debug] [Thread-1 (]: Finished running node test.dbt_servier.not_null_client_product_ventes_client_id.633f605896
+[0m11:31:06.405701 [debug] [Thread-1 (]: Began running node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:31:06.406433 [info ] [Thread-1 (]: 14 of 14 START test not_null_product_ventes_date ............................... [RUN]
+[0m11:31:06.407706 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_servier.not_null_client_product_ventes_client_id.633f605896, now test.dbt_servier.not_null_product_ventes_date.e36dd44ea0)
+[0m11:31:06.408544 [debug] [Thread-1 (]: Began compiling node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:31:06.416842 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:31:06.418405 [debug] [Thread-1 (]: Began executing node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:31:06.422606 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:31:06.424381 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:31:06.425046 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: BEGIN
+[0m11:31:06.425670 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:31:06.426364 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:31:06.427001 [debug] [Thread-1 (]: Using sqlite connection "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"
+[0m11:31:06.427608 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "dbt_servier", "target_name": "dev", "node_id": "test.dbt_servier.not_null_product_ventes_date.e36dd44ea0"} */
+select
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select date
+from main."product_ventes"
+where date is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:31:06.428351 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:31:06.430674 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: ROLLBACK
+[0m11:31:06.431518 [debug] [Thread-1 (]: On test.dbt_servier.not_null_product_ventes_date.e36dd44ea0: Close
+[0m11:31:06.433470 [info ] [Thread-1 (]: 14 of 14 PASS not_null_product_ventes_date ..................................... [[32mPASS[0m in 0.03s]
+[0m11:31:06.436229 [debug] [Thread-1 (]: Finished running node test.dbt_servier.not_null_product_ventes_date.e36dd44ea0
+[0m11:31:06.439791 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:31:06.440360 [debug] [MainThread]: On master: BEGIN
+[0m11:31:06.443680 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:31:06.445195 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m11:31:06.445900 [debug] [MainThread]: On master: COMMIT
+[0m11:31:06.448271 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:31:06.450921 [debug] [MainThread]: On master: COMMIT
+[0m11:31:06.451601 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:31:06.452040 [debug] [MainThread]: On master: Close
+[0m11:31:06.455220 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:31:06.456842 [debug] [MainThread]: Connection 'list_mydbt.db' was properly closed.
+[0m11:31:06.457526 [debug] [MainThread]: Connection 'test.dbt_servier.not_null_product_ventes_date.e36dd44ea0' was properly closed.
+[0m11:31:06.458247 [info ] [MainThread]: 
+[0m11:31:06.459153 [info ] [MainThread]: Finished running 2 seeds, 2 table models, 8 data tests, 2 view models in 0 hours 0 minutes and 0.82 seconds (0.82s).
+[0m11:31:06.462473 [debug] [MainThread]: Command end result
+[0m11:31:06.506120 [debug] [MainThread]: Wrote artifact WritableManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/manifest.json
+[0m11:31:06.508312 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/semantic_manifest.json
+[0m11:31:06.518928 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/csong/Desktop/test_tech_servier_part_2/dbt/target/run_results.json
+[0m11:31:06.519602 [info ] [MainThread]: 
+[0m11:31:06.520430 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:31:06.521234 [info ] [MainThread]: 
+[0m11:31:06.522032 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 TOTAL=14
+[0m11:31:06.524929 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 1.7550564, "process_in_blocks": "0", "process_kernel_time": 0.278384, "process_mem_max_rss": "106548", "process_out_blocks": "2288", "process_user_time": 2.926509}
+[0m11:31:06.526494 [debug] [MainThread]: Command `dbt build` succeeded at 11:31:06.526367 after 1.76 seconds
+[0m11:31:06.527365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7a6769b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7a5b7be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cea7b5068c0>]}
+[0m11:31:06.527971 [debug] [MainThread]: Flushing usage events
+[0m11:31:07.005354 [debug] [MainThread]: An error was encountered while trying to flush usage events

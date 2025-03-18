@@ -1,7 +1,9 @@
 
     
     
-    truncate table "main"."transactions";
+    
+    create table main."transactions" ("date" TEXT,"order_id" INT,"client_id" INT,"prod_id" INT,"prod_price" REAL,"prod_qty" INT)
+  ;
     -- dbt seed --
     
             insert into main.transactions ("date", "order_id", "client_id", "prod_id", "prod_price", "prod_qty") values

@@ -1,27 +1,8 @@
 import sqlite3
 
-query_1 = """
-SELECT
-	date, 
-    SUM(prod_ventes) AS ventes 
-FROM 
-	PRODUCT_VENTES 
-GROUP BY 
-	date
-;
-"""
+query_1 = "SELECT * FROM product_ventes;"
 
-query_2 = """
-SELECT 
-    client_id,
-    SUM(CASE WHEN product_type = 'MEUBLE' THEN prod_ventes END) AS ventes_meuble,
-    SUM(CASE WHEN product_type = 'DECO' THEN prod_ventes END) AS ventes_deco
-FROM 
-    CLIENT_PRODUCT_VENTES
-GROUP BY 
-    client_id
-;
-"""
+query_2 = "SELECT * FROM client_product_ventes;"
 
 conn = sqlite3.connect('mydbt.db')
 
