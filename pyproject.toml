@@ -4,6 +4,10 @@ version = "0.1.0"
 description = ""
 authors = ["changyi <song.c@sfeir.com>"]
 
+packages = [
+  { include = "dbt" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.10"
 dbt-core = "^1.9.3"
